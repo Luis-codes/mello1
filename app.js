@@ -76,3 +76,31 @@
 // var thirdThing = favoriteThings[2];
 
 // console.log(`I like ${firstThing}, ${secondThing}, and ${thirdThing}`);
+
+var car = {
+    make: 'Tesla',
+    model: 'Model 3',
+    color: 'red'
+};
+
+var key = 'color';
+
+// Values are most commonly accessed using dot notation
+console.log(`Car Make: ${car.make}`); // Tesla
+
+// Values can also be accessed using bracket notation
+// similar to ruby hashes
+console.log(`Car Model: ${car['model']}`); // Model 3
+
+// bracket notation is useful for dynamically accessing properties using a variable string
+console.log(`Car Color: ${car[key]}`); // red
+
+// Objects in JavaScript can have keys and values assigned dynamically after creation
+car.egnineSound = 'Vroom!!!';
+
+console.log(`Car Engine Sound: ${car.egnineSound}`);
+
+var willLearnJavaScript = false;
+
+willLearnJavaScript = !willLearnJavaScript
+console.log(willLearnJavaScript);
