@@ -43,16 +43,17 @@
 
 // console.log(total);
 
-//****************************************************** */
-//****************************************************** */
-// var answer = prompt('What time did you clock out?');* */
-//****************************************************** */
-//****************************************************** */
+
+
+// var answer = prompt('What time did you clock out?');
 // var solution = parseFloat(answer);
 
 // var number = solution + .30;
 
 // alert(number);
+
+
+
 
 // var age = 11;
 // age++;
@@ -77,30 +78,33 @@
 
 // console.log(`I like ${firstThing}, ${secondThing}, and ${thirdThing}`);
 
-var car = {
-    make: 'Tesla',
-    model: 'Model 3',
-    color: 'red'
-};
+// var car = {
+//     make: 'Tesla',
+//     model: 'Model 3',
+//     color: 'red'
+// };
 
-var key = 'color';
+// var key = 'color';
 
 // Values are most commonly accessed using dot notation
-console.log(`Car Make: ${car.make}`); // Tesla
+// console.log(`Car Make: ${car.make}`); // Tesla
 
 // Values can also be accessed using bracket notation
 // similar to ruby hashes
-console.log(`Car Model: ${car['model']}`); // Model 3
+// console.log(`Car Model: ${car['model']}`); // Model 3
 
 // bracket notation is useful for dynamically accessing properties using a variable string
-console.log(`Car Color: ${car[key]}`); // red
+// console.log(`Car Color: ${car[key]}`); // red
 
 // Objects in JavaScript can have keys and values assigned dynamically after creation
-car.egnineSound = 'Vroom!!!';
+// car.egnineSound = 'Vroom!!!';
 
-console.log(`Car Engine Sound: ${car.egnineSound}`);
+// console.log(`Car Engine Sound: ${car.egnineSound}`);
 
-var willLearnJavaScript = false;
+// var willLearnJavaScript = false;
 
-willLearnJavaScript = !willLearnJavaScript
-console.log(willLearnJavaScript);
+// willLearnJavaScript = !willLearnJavaScript
+// console.log(willLearnJavaScript);
+
+// var areSame = 'Hello World!' === 'Hello World!';
+// console.log('areSame:', areSame);

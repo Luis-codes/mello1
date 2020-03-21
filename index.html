@@ -4,9 +4,29 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>First JavaScript</title>
+        <title>DOM Manipulation</title>
     </head>
     <body>
-        <script src="app.js"></script>
+        <p>0</p>
+        <button>+</button>
+        <button class="sub">-</button>
+
+        <script src="app.js">
+            var $button = document.querySelector('button');
+            var $counter = document.querySelector('p');
+            var count = 0;
+
+            var $subtract = document.querySelector('sub');
+
+            console.log(`$button:`, $button);
+            console.log(`$counter:`, $counter);
+
+            function handleButtonClick() {
+                count++;
+                $counter.textContent = count;
+            }
+
+            $button.addEventListener('click', handleButtonClick);
+        </script>
     </body>
 </html>
