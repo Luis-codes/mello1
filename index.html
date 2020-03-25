@@ -8,25 +8,28 @@
     </head>
     <body>
         <p>0</p>
-        <button>+</button>
-        <button class="sub">-</button>
+        <button id="plus">+</button>
 
-        <script src="app.js">
-            var $button = document.querySelector('button');
+        <button id="minus">-</button>
+
+        <script>
+            var $plus = document.getElementById('plus');
+            var $minus = document.getElementById('minus')
             var $counter = document.querySelector('p');
             var count = 0;
 
-            var $subtract = document.querySelector('sub');
-
-            console.log(`$button:`, $button);
-            console.log(`$counter:`, $counter);
-
-            function handleButtonClick() {
+            function add() {
                 count++;
                 $counter.textContent = count;
             }
 
-            $button.addEventListener('click', handleButtonClick);
+            function sub() {
+                count--;
+                $counter.textContent = count;
+            }
+
+            $plus.addEventListener('click', add);
+            $minus.addEventListener('click', sub);
         </script>
     </body>
 </html>
