@@ -4,32 +4,29 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>DOM Manipulation</title>
+        <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        />
+        <link 
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Roboto:400,700"
+        />
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+        <title>Mello</title>
     </head>
     <body>
-        <p>0</p>
-        <button id="plus">+</button>
-
-        <button id="minus">-</button>
-
-        <script>
-            var $plus = document.getElementById('plus');
-            var $minus = document.getElementById('minus')
-            var $counter = document.querySelector('p');
-            var count = 0;
-
-            function add() {
-                count++;
-                $counter.textContent = count;
-            }
-
-            function sub() {
-                count--;
-                $counter.textContent = count;
-            }
-
-            $plus.addEventListener('click', add);
-            $minus.addEventListener('click', sub);
-        </script>
+        <div class="ui">
+            <nav>
+                <div class="nav--left">
+                    <span>Mello</span>
+                    <a href="#">My Boards</a>
+                    <a href="#">Contributors</a>
+                </div>
+                <div class="nav--right">
+                    <a href="#">Logout</a>
+                </div>
+            </nav>
+        </div>
     </body>
 </html>
