@@ -16,3 +16,7 @@ class List {
   }
 }
 
+var list = new List('My first list');
+list.addCard('My first card');
+
+console.log(list);
